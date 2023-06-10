@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{margin:0;padding:0}
+*{
+	 box-sizing: border-box;
+}
+.bg{
+	height: 100%; width:100%;
+}
+.all{
+	height: 100%; width:100%;
+}
+.hhead{
+	height: 100px;width:100%;background-color:#FFFFFF;
+}
+.left{
+	
+}
+.body{
+	height: 100%;  width:100%;
+}
+.top{
+	height: 250px;width:100%;background-color:#FFF7EA;
+}
+.bot{
+	width:100%;height: 100%;
+}
+.object{
+	width: calc(100% - 60px);
+	height: 170px;
+	border:#000000 thick 10px;
+	margin: 30px;
+}
+.title{
+	height: 170px;width: 320px;background-color:#FFF7EA;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.titlefont{
+	font-family: 微軟正黑體;
+	font-size: 50px;
+	font-weight: 700;
+}
+.main{ 
+	float: right;
+	width: calc(100% - 320px);
+	height: 170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#FFF7EA;
+	padding:10px;
+}
+.b1{width:250px;background-color:#FFF7EA;margin: 5px;}
+.b2{width:250px;background-color:#FFF7EA;margin: 5px;}
+.b3{width:250px;background-color:#FFF7EA;margin: 5px;}
+.w1{height: 170px;width:25px;}
+.w2{height: 170px;width:25px;}
+.w3{height: 170px;width:25px;}
+.w4{height: 170px;width:25px;}
+.img{width: 100%;}
+.volunteer{}
+.volunteertitle{}
+.volunteermain
+.academic{}
+.academictitle{}
+.academicmain{}
+.english{}
+.englishtitle{}
+.englishmain{}
+@media screen and (max-width:1100px){
+	.b3{display:none ;}
+}
+@media screen and (max-width:850px){
+	.b2{display:none ;}
+	.b3{display:none ;}
+}

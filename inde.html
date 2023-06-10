@@ -1,0 +1,366 @@
+<!doctype html>
+<html style="height: 100%; width:100%;">
+<head>
+	<link rel="stylesheet" href="子目錄1/main.css">
+	<link rel="stylesheet" href="子目錄1/head.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+	<script type="text/javascript">//javascript地區，寫淡入淡出的地方
+		var hello=document.getElementById("")
+		function mon(element){element.style.opacity='0.9';}
+		function mout(element){element.style.opacity='0.6';}
+		function mmon(element){element.style.opacity='1';}
+		function mmout(element){element.style.opacity='0.8';}
+		function anima(){//下拉式菜單觸發
+			var boomm=document.getElementById("boomm");
+			var aqa=boomm.style.opacity;
+			if(aqa<0.1){boomm.style.opacity="0.8";boomm.style.zIndex="8";}
+			else{boomm.style.opacity="0";boomm.style.zIndex="1";}
+		}
+	</script>
+	<script type="text/javascript">//javascript地區，寫淡入淡出的地方
+		function mon(element){element.style.opacity='0.9';}
+		function mout(element){element.style.opacity='0.6';}
+		function mmon(element){element.style.opacity='1';}
+		function mmout(element){element.style.opacity='0.8';}
+	</script>
+	<style>
+<<<<<<< HEAD
+=======
+		@keyframes ii{
+			0%{opacity: 0}
+			60%{opacity: 0}
+			61%{opacity: 1}
+			69%{opacity: 1}
+			70%{opacity: 0}
+			80%{opacity: 0}
+			81%{opacity: 1}
+			89%{opacity: 1}
+			90%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes pp{
+			0%{opacity: 0.6}
+			60%{opacity: 0.6}
+			61%{opacity: 1}
+			69%{opacity: 1}
+			70%{opacity: 0.6}
+			80%{opacity: 0.6}
+			81%{opacity: 1}
+			89%{opacity: 1}
+			90%{opacity: 0.6}
+			100%{opacity: 0.6}
+		}
+		@keyframes out{
+			0%{opacity: 0}
+			100%{opacity: 0.8}
+		}
+		@keyframes bb{
+			0%{opacity: 0}
+			100%{opacity: 1}
+		}
+		@media screen and (min-width:700px){
+			html,body{margin:0;padding:0}
+		.kk{
+			position: absolute;
+            width: 50%;			
+			top:0px;
+			right:30%;
+		}
+		.p1{
+			position: absolute;
+			width: 40%;
+			top:20%;
+			left:2%;
+			opacity: 0.8;
+			animation: out 2s;
+		}
+		.p2{
+			position: absolute;
+			width: 25%;			
+			top:23%;
+			right: 2%;
+			opacity: 0.8;
+			animation: out 2s;
+		}
+		.p3{
+			position: absolute;
+			width: 40%;
+			top:35%;
+			left:10%;
+			opacity: 0.8;
+			animation: out 2s;
+		}
+		.p4{
+			position: absolute;
+			width: 55%;
+			bottom:0%;
+			left:23%;
+			opacity: 0.8;
+			animation: pp 4s infinite;
+		}
+		.i1{
+			position: absolute;
+			width:0%;	
+			left:35%;
+			top:0%;
+			opacity: 0.8;
+			animation: out 2s;
+		}
+		.i2{
+			position: absolute;
+			width: 25%;
+			top:20%;
+			right: 27%;
+			opacity: 0.8;
+			animation: out 2s;
+		}
+		.i3{
+			position: absolute;
+			width: 25%;
+			top:50%;
+			left:65%;
+			opacity: 0.8;
+			animation: out 2s;
+		}		
+		.i4{
+			position: absolute;
+			width: 15%;
+			bottom:0%;
+			left:10%;
+			opacity: 1;
+			animation: ii 4s infinite;
+		}
+				
+		.i5{
+			position: absolute;
+			width: 15%;
+			bottom:2%;
+			left:75%;
+			opacity: 1;
+			animation: ii 4s infinite;
+		}
+		.bg{
+			background:  #FFEFCD;
+			animation: bb 2s;
+			}
+	
+		.header{
+			position: absolute;
+            width: 100%;			
+			top:0px;
+			right:0%;
+			height: 13%;
+			background: #FFFFFF;
+		}
+		.bottom{
+			position: absolute;
+            width: 100%;			
+			bottom:0px;
+			right:0%;
+			height: 10%;
+			background: #FFFFFF;
+		}
+		}
+		@media screen and (max-width:700px){
+			html,body{margin:0;padding:0}
+		.kk{
+			position: absolute;
+			width: 130%;
+			top:0px;
+			right:0px;
+			animation: out 2s;
+		}
+		.p1{
+			position: absolute;
+			width: 70%;
+			top:20%;
+			left:0px;
+			opacity: 0.8;
+			animation: out 2s;
+		}
+		.p2{
+			position: absolute;
+			width: 50%;			
+			top:40%;
+			left:40%;
+			opacity: 0.8;
+			animation: out 2s;
+		}
+		.p3{
+			position: absolute;
+			width: 55%;
+			top:60%;
+			left:10%;
+			opacity: 0.8;
+			animation: out 2s;
+		}
+		.p4{
+			position: absolute;
+			width: 70%;
+			bottom:5%;
+			left:15%;
+			opacity: 0.8;
+			animation: pp 4s infinite;
+		}
+		.i1{
+			position: absolute;
+			width: 30%;	
+			left:60%;
+			top:7%;
+			opacity: 0.8;
+			animation: out 2s;
+		}
+		.i2{
+			position: absolute;
+			width: 40%;
+			top:38%;
+			left:5%;
+			opacity: 0.8;
+			animation: out 2s;
+		}
+		.i3{
+			position: absolute;
+			width: 40%;
+			top:60%;
+			left:60%;
+			opacity: 0.8;
+			animation: out 2s;
+		}		
+		.i4{
+			position: absolute;
+			width: 20%;
+			bottom:8%;
+			left:0%;
+			opacity: 0.8;
+			animation: ii 4s infinite;
+		}
+				
+		.i5{
+			position: absolute;
+			width: 20%;
+			bottom:8%;
+			left:80%;
+			animation: ii 4s infinite;
+		}
+		.bg{
+			background:  #FFEFCD;
+			animation: bb 2s;
+			}
+		.header{
+			position: absolute;
+            width: 100%;
+			height: 16%;
+			top:0px;
+			right:0%;
+			background: #FFFFFF;
+		}
+		.bottom{
+			position: absolute;
+            width: 100%;			
+			bottom:0px;
+			right:0%;
+			height: 18%;
+			background: #FFFFFF;
+		}
+		}
+>>>>>>> 2dd8855da2d3cf17cebf98571ba4d82405601bc1
+		
+	</style>
+<meta charset="utf-8">
+<title>高中學習歷程網KIWINNING!</title>
+</head>
+
+<body class="bg">
+	<div class="all">
+		<div class="hhead">
+				<div class="boom" id="boomm">
+				<div class="boom1">
+				<div class="bbmm"> </div>
+				<div class="wbooom"></div>
+				<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+				<div class="wbooom"></div>
+				<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+				<div class="wbooom"></div>
+				<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+				<div class="wbooom"></div>
+				<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+				</div>
+				<div class="boom2"><img class="boom22"src="tri.png"></div>
+				
+				</div>
+				<div class="headerstyle">
+				<div  class="head" >
+				<div class="headd"><a class="logo"href="index.html"><img src="kiwinning.png" class="headdd"></a></div>
+				</div>
+				</div>
+				<img src="111.png"class="headdder"onMouseOver="mmon(this);"onMouseOut="mmout(this);"
+					 onClick="anima();">
+
+		</div>
+		<div class="left"></div>
+		<div class="body">
+			<div class="top"></div>
+			<div class="bot">
+				<div class="object">
+					<div class="title">
+					 	<a class="titlefont">志工</a>
+					</div>
+					<main class="main">
+						<div class="w1"></div>
+						<div class="b1"><img src="vol1.png" class="img"></div>
+						<div class="w2"></div>
+						<div class="b2"><img src="vol2.png" class="img"></div>
+						<div class="w3"></div>
+						<div class="b3"><img src="vol3.png" class="img"></div>
+						<div class="w4"></div>
+					</main>
+				</div>
+				<div class="object">
+					<div class="title">
+						<a class="titlefont" href="menu.html">學術</a>
+					</div>
+					<main class="main">
+						<div class="w1"></div>
+						<div class="b1"><img src="ade1.png" class="img"></div>
+						<div class="w2"></div>
+						<div class="b2"><img src="ade2.png" class="img"></div>
+						<div class="w3"></div>
+						<div class="b3"><img src="ade3.png" class="img"></div>
+						<div class="w4"></div>
+					</main>
+				</div>
+				<div class="object">
+					<div class="title">
+						<a class="titlefont">英語</a>
+					</div>
+					<main class="main">
+						<div class="w1"></div>
+						<div class="b1"><img src="eng1.png" class="img"></div>
+						<div class="w2"></div>
+						<div class="b2"><img src="eng2.png" class="img"></div>
+						<div class="w3"></div>
+						<div class="b3"><img src="eng3.png" class="img"></div>
+						<div class="w4"></div>
+					</main>
+					</div>
+				<div class="object">
+					<div class="title">
+						<a class="titlefont">趣味</a>
+					</div>
+					<main class="main">
+						<div class="w1"></div>
+						<div class="b1"><img src="fun1.png" class="img"></div>
+						<div class="w2"></div>
+						<div class="b2"><img src="fun2.png" class="img"></div>
+						<div class="w3"></div>
+						<div class="b3"><img src="fun3.png" class="img"></div>
+						<div class="w4"></div>
+					</main>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<?php
+$link=mysqli_connect("127.0.0.1:3306","u151420285_test","51129hsiF","u151420285_test");
+ 
+if (empty($link)){
+print mysqli_error($link);
+die ("無法連結資料庫");
+exit;
+}
+mysqli_query( $link, "SET NAMES 'utf8'");
+$str="select subject from post where subject='a'";
+$result = mysqli_query($link,$str);
+while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
+print_r($row);
+$row = mysqli_fetch_array($result, MYSQLI_BOTH)
+}
+?>
+
+<!doctype html>
+<html style="width:100%;height:100%;">
+<head>
+	<link rel="stylesheet" href="head.css">
+	<link rel="stylesheet" href="object.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+<script type="text/javascript">
+		var hello=document.getElementById("")
+		function mon(element){
+			element.style.opacity='1';
+		}
+		function mout(element){
+		
+			element.style.opacity='0.8';
+			
+		}
+			function anima(){
+		var boomm=document.getElementById("boomm");
+		//boomm.classList.add("effect
+		var aqa=boomm.style.opacity;
+		if(aqa<0.1){
+			boomm.style.opacity="0.8";
+		}else{
+			boomm.style.opacity="0";
+		}
+	}
+	</script>
+<style></style>
+<meta charset="utf-8">
+<title>無標題文件</title>
+</head>
+
+<body class="bodystyle">
+	
+	<div class="box"></div>
+	<div class="whitebox"></div>
+	<img style="width: 100%;" src="chineselogo.png">
+	<div class="paper"><main> 
+		<div class="papertop"></div>
+		<div class="item"><a href="https://www.shs.edu.tw" class="a"><img src="chinese1.jpg" class="img" onMouseOver="mon(this);" onMouseOut="mout(this);"></a>
+			
+			<h1>
+			    <?php echo $row[0] ?></h1><br/>
+			<h2><br/><br/></h2>
+			<h2><br/><br/></h2>
+				<h2><?php while ($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
+                            echo $row;
+                             }
+                             echo $row;
+                             echo $row[0];
+                             ?>
+            </h2><h3><br/></h3>
+				<h2> </h2><h3><br/></h3>
+			    <h5><br/>
+				<br/>
+				
+				<br/>
+				
+				<br/>
+				<br/></h5>
+			
+		</div>
+		<div class="item"><a href="https://language109.eduweb.tw/Module/Home/Index.php" class="a"><img src="../top109.png" class="img" onMouseOver="mon(this);" onMouseOut="mout(this);"></a>
+			
+			<h1>賽</h1>	<br/>
+			<h2><br/><br/></h2>
+			<h2><br/><br/><br/><br/></h2>
+			</div>
+		<div class="item"><a href="https://www.cwt.org.tw/CWTFrontEnd/SignUp.aspx" class="a"><img src="chinese3.jpg" class="img" onMouseOver="mon(this);" onMouseOut="mout(this);"></a>
+	
+			<h1></h1>	<br/>
+			<h2><br/><br/></h2>
+			<h5> </h5>
+			</div>
+
+	</main></div>
+	<div class="bottom"></div>
+	<div class="boom" id="boomm">
+		<div class="boom1">
+		<div class="bbmm"> </div>
+		<div class="wbooom"></div>
+				<div class="booom"><a href="register.html" class="bm" onMouseOver="mon(this);" onMouseOut="mout(this);">註冊測試</a></div>
+		<div class="wbooom"></div>
+		<div class="booom"><a href="login.html" class="bm" onMouseOver="mon(this);" onMouseOut="mout(this);">登入測試</a></div>
+		<div class="wbooom"></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+		<div class="wbooom"></div>
+		<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+		</div>
+		<div class="boom2"><img class="boom22"src="tri.png"></div>
+	</div>
+		
+	
+	<div class="headerstyle">
+	<div class="head" >
+		<div class="headd"><a class="logo"href="../index.html"><img src="kiwinning.png" class="headdd"></a></div>
+	</div>
+	</div>
+	<img src="111.png" class="headdder"onMouseOver="mon(this);"onMouseOut="mout(this);"
+		 onClick="anima();">
+	
+
+</body>
+</html>

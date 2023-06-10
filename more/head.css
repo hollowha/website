@@ -1,0 +1,153 @@
+@charset "utf-8";
+			@media screen and (min-width:700px){
+			.head{/*最上面放logo的區塊(顏色陰影圓角調整)*/
+				background-color:#FFFFFF;height: 100%;border-radius: 0px;
+					box-shadow: 0px 5px 10px #000000;}
+			.headd{/*logo區塊調整層*/
+				height: 100%;
+			}
+			.logo{/*logo區塊調整ahref層*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			}
+			.headdd{/*logo區塊img調整層*/
+				height: 80%;
+			}
+			.headerstyle{/*包裹整個logo區塊*/
+				height: 15%;width:100%;position: absolute;top:0px;left: 0px;position: fixed;z-index: 8;
+			}
+			.headdder{/*下拉是選單「三」img調整層*/
+				height: 15%;left:0%;position: absolute;top: 0%;opacity:0.8;position: fixed;z-index: 9;
+			}
+			.bodystyle{/*背景*/
+				height: 100%;width:100%;box-sizing: border-box;width:100%;
+				background-size: cover;
+				background-attachment:fixed;
+				background-image: url(woodbg.jpg);
+				animation: out 2s;
+			}
+			.background{/*他不是背景，似乎沒用到*/
+				height: 100%;width: 100%;
+			}
+			.boom1{/*下拉式選單方格區塊*/
+				width: 100%;
+				height: 90%;
+				background-color:#000000;
+			}
+			.boom2{/*下拉式選單三角形區塊*/
+				width: 100%;
+				height: 10%;
+			}
+			.bbmm{/*下拉式選單方格上方空區塊*/
+			height: 20%;
+			width: 100%;
+			}
+			.boom22{/*下拉式選單包裹方格間隙三角形區塊*/
+				width: 100%;
+				height: 100%;
+			}
+			.boom{/*包裹整個下拉式選單*/
+			position: absolute;
+			left: 0%;
+			top:0%;
+			height: 100%;
+			width: 20%;
+			opacity:0;
+			transition:opacity 0.5s;
+			box-shadow: 0px 0px 0px #000000;
+			position: fixed;z-index: 8;
+		}
+			.booom{/*下拉式選單裡面選項方塊*/
+				height: 8%;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.bm{/*下拉式選單選項更裡頭方塊*/
+				background-color: aliceblue;width: 90%;height: 100%;opacity: 0.6;
+			}
+			.wbooom{/*下拉式選單間隙區塊*/
+				height: 2%;
+				width: 100%;
+			}	
+}
+@media screen and (max-width:700px){
+			.head{/*最上面放logo的區塊(顏色陰影圓角調整)*/
+				background-color:#FFFFFF; height: 100%;border-radius: 10px;
+					box-shadow: 0px 0px 20px #000000;
+			}
+			.headd{/*logo區塊調整層*/
+				height: 100%;
+				
+			}
+			.logo{/*logo區塊調整ahref層*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+			.headdd{ /*logo區塊img調整層*/
+				height: 100%;
+			}
+			.headdder{/*下拉是選單「三」img調整層*/
+				height: 8%;left:0%;position: absolute;top:0%;opacity: 0.8;position: fixed;z-index: 9;
+			}	
+			.headerstyle{/*包裹整個logo區塊*/
+				height: 8%;width:100%;position: absolute;left:0%;top:0%;position: fixed;
+				z-index: 8;
+			}
+			.boom1{/*下拉式選單方格區塊*/
+				width: 100%;
+				height:100%;
+				
+			}
+			.boom2{/*下拉式選單三角形區塊*/
+				width: 0%;
+				height: 0%;
+			}
+			.boom22{/*下拉式選單包裹方格間隙三角形區塊*/
+				width: 0%;
+				height: 0%;
+			}
+			.boom{/*包裹整個下拉式選單*/
+			position: absolute;
+			left: 0%;
+			top:0%;
+			height: 20%;
+			width: 100%;
+			opacity:0;
+			background-color:#000000;
+			transition:opacity 0.3s;
+			position: fixed;
+			z-index: 8;
+			}
+			.bbmm{/*下拉式選單方格上方空區塊*/
+				height: 50%;width: 100%;
+			}
+			.booom{/*下拉式選單裡面選項方塊*/
+				height: 40%;
+				width: 20%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				float:left;
+			}
+			.bm{/*下拉式選單選項更裡頭方塊*/
+				background-color: aliceblue;width: 100%;height: 90%;opacity: 0.6;
+			}
+			.wbooom{/*下拉式選單間隙區塊*/
+				height: 30%;width: 4%;float:left;
+			}
+			.bodystyle{/*背景*/
+				width:100%;
+				animation: out 2s;
+				background-size: cover;
+				background-attachment:fixed;
+				background-image: url(woodbg.jpg);
+			}
+}
+/* CSS Document */
+

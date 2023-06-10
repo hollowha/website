@@ -1,0 +1,92 @@
+<?php
+if(isset($_SESSION['user_name'])){
+}else{
+echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."login.html"."\""."</script>";
+}
+?>
+
+<!doctype html>
+<html style="height: 100%; width:100%;">
+<head>
+<link rel="stylesheet" href="more/head.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">//javascript地區，寫淡入淡出的地方
+var hello=document.getElementById("")
+function mon(element){element.style.opacity='0.9';}
+function mout(element){element.style.opacity='0.6';}
+function mmon(element){element.style.opacity='1';}
+function mmout(element){element.style.opacity='0.8';}
+function anima(){//下拉式菜單觸發
+var boomm=document.getElementById("boomm");
+var aqa=boomm.style.opacity;
+if(aqa<0.1){boomm.style.opacity="0.8";boomm.style.zIndex="8";}
+else{boomm.style.opacity="0";boomm.style.zIndex="1";}
+}
+</script>
+<style>
+.login{
+float: left;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+flex-wrap: wrap;
+font-size: 15px;
+}
+.loginwhite{
+width:100%;
+height: 300px;
+z-index: 0;
+}
+</style>
+<title>登录界面</title>
+</head>
+
+<body class="bodystyle">
+<div class="login">
+<div class="loginwhite"></div>
+<form method="post" action="post.php">
+標題：
+<input  name="textl"></br></br>
+內文：
+<input  name="text2">
+<input type="submit" value="發文" name="confirml">選擇科目：
+<select id="subject" name="subject">
+
+<option value='a'>國文</option>
+<option value='b'>英文</option>
+<option value='c'>數學</option>
+<option value='d'>社會</option>
+<option value='e'>自然</option>
+<option value='f'>資訊</option>
+</select>
+</div>
+
+
+
+<div class="boom" id="boomm">
+<div class="boom1">
+<div class="bbmm"> </div>
+<div class="wbooom"></div>
+<div class="booom"><a href="register.html" class="bm" onMouseOver="mon(this);" onMouseOut="mout(this);">註冊測試</a></div>
+<div class="wbooom"></div>
+<div class="booom"><a href="login.html" class="bm" onMouseOver="mon(this);" onMouseOut="mout(this);">登入測試</a></div>
+<div class="wbooom"></div>
+<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+<div class="wbooom"></div>
+<div class="booom"><div class="bm"onMouseOver="mon(this);" onMouseOut="mout(this);"></div></div>
+</div>
+<div class="boom2"><img class="boom22"src="tri.png"></div>
+</div>
+<div class="headerstyle">
+<div class="head" >
+<div class="headd"><a class="logo"href="index.html"><img src="kiwinning.png" class="headdd"></a></div>
+</div>
+</div>
+<img src="111.png"class="headdder"onMouseOver="mmon(this);"onMouseOut="mmout(this);"
+onClick="anima();">
+
+</body>
+</html>

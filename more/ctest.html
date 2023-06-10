@@ -1,0 +1,59 @@
+<?php
+$link=mysqli_connect("127.0.0.1:3306","u151420285_test","51129hsiF","u151420285_test");
+ 
+if (empty($link)){
+print mysqli_error($link);
+die ("無法連結資料庫");
+exit;
+}
+mysqli_query( $link, "SET NAMES 'utf8'");
+$str="select subject from post where subject='a'";
+$result = mysqli_query($link,$str);
+$row = mysqli_fetch_array($result, MYSQLI_BOTH)
+}
+?>
+
+<!doctype html>
+<html style="width:100%;height:100%;">
+<head>
+	<link rel="stylesheet" href="head.css">
+	<link rel="stylesheet" href="object.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+<script type="text/javascript">
+		var hello=document.getElementById("")
+		function mon(element){
+			element.style.opacity='1';
+		}
+		function mout(element){
+		
+			element.style.opacity='0.8';
+			
+		}
+			function anima(){
+		var boomm=document.getElementById("boomm");
+		//boomm.classList.add("effect
+		var aqa=boomm.style.opacity;
+		if(aqa<0.1){
+			boomm.style.opacity="0.8";
+		}else{
+			boomm.style.opacity="0";
+		}
+	}
+	</script>
+<style></style>
+<meta charset="utf-8">
+<title>無標題文件</title>
+</head>
+
+<body class="bodystyle">
+	
+	<h1><?php 
+while($row = mysqli_fetch_array($result)){
+$row['date'];
+$row['text'];
+} ?>
+</h1>
+	
+
+</body>
+</html>
